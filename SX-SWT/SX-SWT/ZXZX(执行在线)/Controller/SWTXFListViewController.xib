@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SWTXFListViewController">
+            <connections>
+                <outlet property="backbtn" destination="wjl-8R-oxg" id="ryu-qK-IxB"/>
+                <outlet property="mytableView" destination="IYd-Pc-cb6" id="Ixp-Qn-6Mp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="StM-IN-MtR">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjl-8R-oxg">
+                            <rect key="frame" x="8" y="29" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="qfP-BS-t7u"/>
+                            </constraints>
+                            <state key="normal" title="回">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="back:" destination="-1" eventType="touchUpInside" id="w6v-j6-wC4"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="信访列表" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9b-Y5-Ajy">
+                            <rect key="frame" x="126" y="31" width="68" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77z-rT-qOv">
+                            <rect key="frame" x="282" y="27" width="30" height="30"/>
+                            <state key="normal" title="新增">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="addNew:" destination="-1" eventType="touchUpInside" id="Y3j-mD-FMe"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.38431372549999998" green="0.035294117649999998" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="R9b-Y5-Ajy" firstAttribute="centerY" secondItem="StM-IN-MtR" secondAttribute="centerY" constant="10" id="8nv-Zl-Ysg"/>
+                        <constraint firstAttribute="trailing" secondItem="77z-rT-qOv" secondAttribute="trailing" constant="8" id="Bkf-GV-hKK"/>
+                        <constraint firstItem="wjl-8R-oxg" firstAttribute="leading" secondItem="StM-IN-MtR" secondAttribute="leading" constant="15" id="Csm-Ly-bP5"/>
+                        <constraint firstItem="wjl-8R-oxg" firstAttribute="centerY" secondItem="StM-IN-MtR" secondAttribute="centerY" constant="10" id="aei-sG-njd"/>
+                        <constraint firstItem="R9b-Y5-Ajy" firstAttribute="centerX" secondItem="StM-IN-MtR" secondAttribute="centerX" id="dvM-e2-2cb"/>
+                        <constraint firstItem="77z-rT-qOv" firstAttribute="centerY" secondItem="StM-IN-MtR" secondAttribute="centerY" constant="10" id="hOE-sJ-pCe"/>
+                        <constraint firstAttribute="height" constant="64" id="tD2-aY-N0X"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IYd-Pc-cb6">
+                    <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.92156862750000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="JfD-kS-070"/>
+                        <outlet property="delegate" destination="-1" id="MqR-Yd-ORO"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.92156862750000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="IYd-Pc-cb6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="IsE-7u-VdC"/>
+                <constraint firstItem="StM-IN-MtR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LPF-G2-Ac9"/>
+                <constraint firstItem="StM-IN-MtR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Pza-Cg-Cco"/>
+                <constraint firstItem="IYd-Pc-cb6" firstAttribute="top" secondItem="StM-IN-MtR" secondAttribute="bottom" id="hoh-Xi-nzh"/>
+                <constraint firstAttribute="bottom" secondItem="IYd-Pc-cb6" secondAttribute="bottom" id="jPd-Ou-DlQ"/>
+                <constraint firstAttribute="trailing" secondItem="IYd-Pc-cb6" secondAttribute="trailing" id="mxJ-L0-sBs"/>
+                <constraint firstAttribute="trailing" secondItem="StM-IN-MtR" secondAttribute="trailing" id="tFL-SV-39M"/>
+            </constraints>
+            <point key="canvasLocation" x="205" y="318"/>
+        </view>
+    </objects>
+</document>

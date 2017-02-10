@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="245" id="KGk-i7-Jjw" customClass="SWTLXFSCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="245"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="244.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="法院名称：陕西省高级人民法院" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tz4-r4-Op8">
+                        <rect key="frame" x="8" y="8" width="304" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="法院地址：" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Chw-28-Rh7">
+                        <rect key="frame" x="8" y="34" width="304" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="联系电话：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xjy-Ax-Asx">
+                        <rect key="frame" x="8" y="60" width="75" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UI0-45-yJf">
+                        <rect key="frame" x="91" y="54.5" width="73" height="30"/>
+                        <state key="normal" title="56738293"/>
+                        <connections>
+                            <action selector="lxdhBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="zG9-ou-CSQ"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TFT-gP-0gX">
+                        <rect key="frame" x="8" y="92" width="304" height="144.5"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Chw-28-Rh7" secondAttribute="trailing" constant="8" id="0cA-XS-PKP"/>
+                    <constraint firstAttribute="bottom" secondItem="TFT-gP-0gX" secondAttribute="bottom" constant="8" id="2JX-34-lln"/>
+                    <constraint firstItem="UI0-45-yJf" firstAttribute="centerY" secondItem="Xjy-Ax-Asx" secondAttribute="centerY" id="4tD-l8-6G4"/>
+                    <constraint firstItem="Tz4-r4-Op8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Jke-fx-sx8"/>
+                    <constraint firstItem="Tz4-r4-Op8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Jpe-C6-p36"/>
+                    <constraint firstItem="Xjy-Ax-Asx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Kk2-XX-Hdr"/>
+                    <constraint firstItem="Chw-28-Rh7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Kvr-Lo-Kp6"/>
+                    <constraint firstItem="TFT-gP-0gX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="MMX-JK-3wh"/>
+                    <constraint firstItem="Chw-28-Rh7" firstAttribute="top" secondItem="Tz4-r4-Op8" secondAttribute="bottom" constant="8" id="PoS-NF-dM9"/>
+                    <constraint firstItem="Xjy-Ax-Asx" firstAttribute="top" secondItem="Chw-28-Rh7" secondAttribute="bottom" constant="8" id="ThQ-cm-Mwh"/>
+                    <constraint firstAttribute="trailing" secondItem="Tz4-r4-Op8" secondAttribute="trailing" constant="8" id="U9P-sD-c89"/>
+                    <constraint firstItem="UI0-45-yJf" firstAttribute="leading" secondItem="Xjy-Ax-Asx" secondAttribute="trailing" constant="8" id="YXW-hn-EsN"/>
+                    <constraint firstItem="TFT-gP-0gX" firstAttribute="top" secondItem="UI0-45-yJf" secondAttribute="bottom" constant="8" id="iiE-ZP-trE"/>
+                    <constraint firstAttribute="trailing" secondItem="TFT-gP-0gX" secondAttribute="trailing" constant="8" id="sqd-pb-dba"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="fydzLabel" destination="Chw-28-Rh7" id="79y-Rg-kML"/>
+                <outlet property="fymcLabel" destination="Tz4-r4-Op8" id="Lty-PG-mij"/>
+                <outlet property="lxdhBtn" destination="UI0-45-yJf" id="geF-RB-Uzk"/>
+                <outlet property="mapImg" destination="TFT-gP-0gX" id="R7M-Jo-XFv"/>
+            </connections>
+            <point key="canvasLocation" x="350" y="358.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SWTcxFirstViewController">
+            <connections>
+                <outlet property="nianHaoTextField" destination="4kr-Sd-jAl" id="vfE-rd-RX8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="zihaoTextField" destination="6DY-x5-IDh" id="GpK-4T-mTw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="查询密码" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IN3-Gm-hsB">
+                    <rect key="frame" x="230" y="247" width="80" height="40"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="2He-Sw-jM3"/>
+                        <constraint firstAttribute="width" constant="80" id="zGL-g3-dWY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="请输入查询编码" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="4kr-Sd-jAl">
+                    <rect key="frame" x="10" y="197" width="220" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="E8n-Lz-vHI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSx-tR-7vb">
+                    <rect key="frame" x="10" y="25" width="300" height="162.5"/>
+                    <string key="text">        您可以使用您在办理立案手续时获得的用户名和密码登录并查询您的案件当前审理进度情况。点击“案件信息查询”按钮进入查询页面。输入账号、密码之后点击“查询”按钮即可查询所属案件。
+    网上信息仅供参考，一切信息以法院出具的正式文书为准。</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YuC-mU-F29">
+                    <rect key="frame" x="10" y="317" width="300" height="40"/>
+                    <color key="backgroundColor" red="0.38431372549999998" green="0.035294117649999998" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="qsV-pB-72i"/>
+                    </constraints>
+                    <state key="normal" title="查询">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="chaxunBtn:" destination="-1" eventType="touchUpInside" id="MDp-oK-K1Z"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="查询编码" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TgN-t6-eFJ">
+                    <rect key="frame" x="230" y="197" width="80" height="40"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="8if-Ep-Ete"/>
+                        <constraint firstAttribute="width" constant="80" id="uGs-DW-eUk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="请输入查询密码" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="6DY-x5-IDh">
+                    <rect key="frame" x="10" y="247" width="220" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="hkq-mn-LMx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.92156862750000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="6DY-x5-IDh" firstAttribute="top" secondItem="4kr-Sd-jAl" secondAttribute="bottom" constant="10" id="6I6-12-8vj"/>
+                <constraint firstAttribute="trailing" secondItem="YuC-mU-F29" secondAttribute="trailing" constant="10" id="Akp-tM-5V1"/>
+                <constraint firstItem="YuC-mU-F29" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="FXp-jz-oCX"/>
+                <constraint firstItem="TgN-t6-eFJ" firstAttribute="leading" secondItem="4kr-Sd-jAl" secondAttribute="trailing" id="Lrn-8M-w5o"/>
+                <constraint firstAttribute="trailing" secondItem="TgN-t6-eFJ" secondAttribute="trailing" constant="10" id="Mdn-mR-jde"/>
+                <constraint firstItem="6DY-x5-IDh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="S59-dO-QOv"/>
+                <constraint firstItem="4kr-Sd-jAl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="SfU-Yo-kDx"/>
+                <constraint firstItem="IN3-Gm-hsB" firstAttribute="top" secondItem="TgN-t6-eFJ" secondAttribute="bottom" constant="10" id="bwZ-kO-VCf"/>
+                <constraint firstItem="YuC-mU-F29" firstAttribute="top" secondItem="IN3-Gm-hsB" secondAttribute="bottom" constant="30" id="gTa-BR-3gH"/>
+                <constraint firstAttribute="trailing" secondItem="IN3-Gm-hsB" secondAttribute="trailing" constant="10" id="hIM-kX-peT"/>
+                <constraint firstItem="TgN-t6-eFJ" firstAttribute="top" secondItem="RSx-tR-7vb" secondAttribute="bottom" constant="10" id="nK0-Ns-gua"/>
+                <constraint firstAttribute="trailing" secondItem="RSx-tR-7vb" secondAttribute="trailing" constant="10" id="qh5-Vz-7Gx"/>
+                <constraint firstItem="RSx-tR-7vb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="25" id="uXV-jA-xS7"/>
+                <constraint firstItem="4kr-Sd-jAl" firstAttribute="top" secondItem="RSx-tR-7vb" secondAttribute="bottom" constant="10" id="xKM-xs-I3t"/>
+                <constraint firstItem="IN3-Gm-hsB" firstAttribute="leading" secondItem="6DY-x5-IDh" secondAttribute="trailing" id="xTL-dN-qWz"/>
+                <constraint firstItem="RSx-tR-7vb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="zIC-kt-mSA"/>
+            </constraints>
+            <point key="canvasLocation" x="396" y="332"/>
+        </view>
+    </objects>
+</document>

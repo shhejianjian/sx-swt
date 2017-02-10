@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SWTPlayVideoViewController">
+            <connections>
+                <outlet property="backBtn" destination="POg-xb-Y2I" id="nR3-iY-a27"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="diQ-f0-cyS">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POg-xb-Y2I">
+                            <rect key="frame" x="8" y="29" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="fX9-N1-TPb"/>
+                            </constraints>
+                            <state key="normal" title="回">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="back:" destination="-1" eventType="touchUpInside" id="Igy-vj-Iyt"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="播放视频" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5I-Eq-NT7">
+                            <rect key="frame" x="126" y="31" width="68" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.38431372549999998" green="0.035294117649999998" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="64" id="1Od-4a-2eh"/>
+                        <constraint firstItem="L5I-Eq-NT7" firstAttribute="centerY" secondItem="diQ-f0-cyS" secondAttribute="centerY" constant="10" id="ATE-AT-rkW"/>
+                        <constraint firstItem="POg-xb-Y2I" firstAttribute="centerY" secondItem="diQ-f0-cyS" secondAttribute="centerY" constant="10" id="Eg9-H7-8rY"/>
+                        <constraint firstItem="POg-xb-Y2I" firstAttribute="leading" secondItem="diQ-f0-cyS" secondAttribute="leading" constant="15" id="Eho-Fx-fme"/>
+                        <constraint firstAttribute="height" constant="64" id="Ji4-Un-Bu9"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="TtR-Yh-fQg"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="64" id="kDO-HG-3vp"/>
+                        <constraint firstItem="L5I-Eq-NT7" firstAttribute="centerX" secondItem="diQ-f0-cyS" secondAttribute="centerX" id="oem-Sa-5Gs"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.92156862750000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="diQ-f0-cyS" secondAttribute="trailing" id="NY5-b1-ND7"/>
+                <constraint firstItem="diQ-f0-cyS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Rah-IG-CO8"/>
+                <constraint firstItem="diQ-f0-cyS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="wKg-rH-hZK"/>
+            </constraints>
+            <point key="canvasLocation" x="439" y="374"/>
+        </view>
+    </objects>
+</document>

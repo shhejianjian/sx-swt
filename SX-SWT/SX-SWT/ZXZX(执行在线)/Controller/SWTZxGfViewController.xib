@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SWTZxGfViewController">
+            <connections>
+                <outlet property="backBtn" destination="ova-CY-dDE" id="hwG-Rc-kS8"/>
+                <outlet property="mytableview" destination="4hr-yo-hzQ" id="pnM-qZ-yKn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jem-It-4Pp">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ova-CY-dDE">
+                            <rect key="frame" x="8" y="29.5" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="FfG-Ag-LOU"/>
+                            </constraints>
+                            <state key="normal" title="回">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="back:" destination="-1" eventType="touchUpInside" id="pFw-8f-zTQ"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="执行规范" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ae-cT-qAB">
+                            <rect key="frame" x="126" y="31.5" width="68" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.38431372549999998" green="0.035294117649999998" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="ova-CY-dDE" firstAttribute="centerY" secondItem="Jem-It-4Pp" secondAttribute="centerY" constant="10" id="2Ql-ce-BBO"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="5Uw-Pi-rQM"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="64" id="7aT-6D-VXJ"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="64" id="86f-u8-amZ"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="64" id="AmL-Ib-LCa"/>
+                        <constraint firstAttribute="height" constant="64" id="EVI-85-4VA"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="64" id="KkJ-Bl-B6j"/>
+                        <constraint firstItem="1ae-cT-qAB" firstAttribute="centerX" secondItem="Jem-It-4Pp" secondAttribute="centerX" id="ZW4-pG-hOV"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="64" id="mjf-wl-Qc0"/>
+                        <constraint firstItem="1ae-cT-qAB" firstAttribute="centerY" secondItem="Jem-It-4Pp" secondAttribute="centerY" constant="10" id="nCv-kt-esw"/>
+                        <constraint firstItem="ova-CY-dDE" firstAttribute="leading" secondItem="Jem-It-4Pp" secondAttribute="leading" constant="15" id="p0N-Le-rRR"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4hr-yo-hzQ">
+                    <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.92156862750000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="7ma-o5-cXn"/>
+                        <outlet property="delegate" destination="-1" id="hUv-1n-BPH"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="4hr-yo-hzQ" secondAttribute="bottom" id="9ig-dH-jTb"/>
+                <constraint firstItem="4hr-yo-hzQ" firstAttribute="top" secondItem="Jem-It-4Pp" secondAttribute="bottom" id="FzE-eX-LG5"/>
+                <constraint firstItem="Jem-It-4Pp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="GFb-To-DGI"/>
+                <constraint firstAttribute="trailing" secondItem="Jem-It-4Pp" secondAttribute="trailing" id="KiI-e2-RBO"/>
+                <constraint firstItem="Jem-It-4Pp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SDh-Sn-5Pf"/>
+                <constraint firstItem="4hr-yo-hzQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gg0-7I-UQI"/>
+                <constraint firstAttribute="trailing" secondItem="4hr-yo-hzQ" secondAttribute="trailing" id="kXQ-R2-C4j"/>
+            </constraints>
+            <point key="canvasLocation" x="192" y="433"/>
+        </view>
+    </objects>
+</document>

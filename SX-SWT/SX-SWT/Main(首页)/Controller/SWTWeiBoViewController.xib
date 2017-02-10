@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SWTWeiBoViewController">
+            <connections>
+                <outlet property="showImg" destination="ocb-L3-Uc3" id="nwj-Lr-jYc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="center" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJg-aI-BzW">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1n-O8-HU2">
+                            <rect key="frame" x="15" y="27" width="80" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="Agi-CX-ayT"/>
+                            </constraints>
+                            <state key="normal" title="返回">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="back:" destination="-1" eventType="touchUpInside" id="b2n-0S-iiM"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="官方微博" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGe-jK-RV1">
+                            <rect key="frame" x="126" y="31" width="68" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.38431372549999998" green="0.035294117649999998" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="64" id="07J-Fc-YU2"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="64" id="0zH-Om-eVP"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="64" id="23G-oF-MAc"/>
+                        <constraint firstItem="L1n-O8-HU2" firstAttribute="centerY" secondItem="uJg-aI-BzW" secondAttribute="centerY" constant="10" id="24a-lo-HOI"/>
+                        <constraint firstItem="jGe-jK-RV1" firstAttribute="centerX" secondItem="uJg-aI-BzW" secondAttribute="centerX" id="40m-CR-rMm"/>
+                        <constraint firstItem="jGe-jK-RV1" firstAttribute="centerY" secondItem="uJg-aI-BzW" secondAttribute="centerY" constant="10" id="55m-0h-NWf"/>
+                        <constraint firstAttribute="height" constant="64" id="7dY-XK-PwR"/>
+                        <constraint firstItem="L1n-O8-HU2" firstAttribute="leading" secondItem="uJg-aI-BzW" secondAttribute="leading" constant="15" id="AE0-bl-6Pg"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="DdD-8G-BcU"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="陕西省高级人民法院" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yuI-aW-6cK">
+                    <rect key="frame" x="10" y="84" width="300" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="微博头像" translatesAutoresizingMaskIntoConstraints="NO" id="ocb-L3-Uc3">
+                    <rect key="frame" x="85" y="200" width="150" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="ZVb-wa-ysr"/>
+                        <constraint firstAttribute="height" constant="150" id="hII-77-lqj"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="微博图标" translatesAutoresizingMaskIntoConstraints="NO" id="tTX-xK-oHL">
+                    <rect key="frame" x="120" y="125" width="80" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="2Yy-nb-3uv"/>
+                        <constraint firstAttribute="height" constant="60" id="jOw-x2-7vn"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCr-3N-5DZ">
+                    <rect key="frame" x="10" y="370" width="300" height="30"/>
+                    <state key="normal" title="http://weibo.com/u/3912076973"/>
+                    <connections>
+                        <action selector="loadWebBtnClick:" destination="-1" eventType="touchUpInside" id="G64-gy-GGP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.92156862750000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="uJg-aI-BzW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0le-OZ-CK0"/>
+                <constraint firstItem="SCr-3N-5DZ" firstAttribute="top" secondItem="ocb-L3-Uc3" secondAttribute="bottom" constant="20" id="6N7-Rx-297"/>
+                <constraint firstItem="yuI-aW-6cK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="FZF-4e-ceL"/>
+                <constraint firstAttribute="trailing" secondItem="uJg-aI-BzW" secondAttribute="trailing" id="L0J-EP-1kE"/>
+                <constraint firstItem="uJg-aI-BzW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="L4M-4Q-Vc3"/>
+                <constraint firstAttribute="trailing" secondItem="yuI-aW-6cK" secondAttribute="trailing" constant="10" id="WMV-bF-pec"/>
+                <constraint firstItem="tTX-xK-oHL" firstAttribute="top" secondItem="yuI-aW-6cK" secondAttribute="bottom" constant="20" id="ZaT-tD-mOX"/>
+                <constraint firstItem="SCr-3N-5DZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="bw9-gF-bNY"/>
+                <constraint firstItem="ocb-L3-Uc3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cNj-oT-Yas"/>
+                <constraint firstItem="ocb-L3-Uc3" firstAttribute="top" secondItem="tTX-xK-oHL" secondAttribute="bottom" constant="15" id="cXT-vb-Cxe"/>
+                <constraint firstItem="tTX-xK-oHL" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="e3D-lQ-Vfj"/>
+                <constraint firstItem="yuI-aW-6cK" firstAttribute="top" secondItem="uJg-aI-BzW" secondAttribute="bottom" constant="20" id="eo2-Py-AN5"/>
+                <constraint firstAttribute="trailing" secondItem="SCr-3N-5DZ" secondAttribute="trailing" constant="10" id="rZk-eK-O2N"/>
+            </constraints>
+            <point key="canvasLocation" x="427" y="299"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="微博图标" width="293" height="220"/>
+        <image name="微博头像" width="354" height="332"/>
+    </resources>
+</document>

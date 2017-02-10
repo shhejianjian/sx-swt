@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SWTGSSecondViewController">
+            <connections>
+                <outlet property="myWebView" destination="CXy-L1-SMs" id="kdy-89-CXE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CXy-L1-SMs">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="CXy-L1-SMs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3Ma-24-g3d"/>
+                <constraint firstItem="CXy-L1-SMs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ti2-Ub-8b9"/>
+                <constraint firstAttribute="bottom" secondItem="CXy-L1-SMs" secondAttribute="bottom" id="bQu-HM-F89"/>
+                <constraint firstAttribute="trailing" secondItem="CXy-L1-SMs" secondAttribute="trailing" id="chc-fY-P6Y"/>
+            </constraints>
+            <point key="canvasLocation" x="427" y="261"/>
+        </view>
+    </objects>
+</document>

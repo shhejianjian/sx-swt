@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SWTGSThirdViewController">
+            <connections>
+                <outlet property="addressLabel" destination="Od3-Cm-TEi" id="zdf-4b-LfF"/>
+                <outlet property="fyNameLabel" destination="cLn-UI-8LG" id="Yxv-Y1-irt"/>
+                <outlet property="myMapView" destination="e77-nY-lkt" id="5Uq-Vt-jZS"/>
+                <outlet property="stopOrStartBtn" destination="Xkl-v6-Rkc" id="BYc-Fn-c8Z"/>
+                <outlet property="telNumberLabel" destination="GV4-ut-Obc" id="66S-Jo-lsq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="e77-nY-lkt">
+                    <rect key="frame" x="5" y="95" width="310" height="468"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="7ck-p6-mlC"/>
+                    </connections>
+                </mapView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="法院名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLn-UI-8LG">
+                    <rect key="frame" x="10" y="10" width="300" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地址" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Od3-Cm-TEi">
+                    <rect key="frame" x="10" y="38" width="300" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="联系电话:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UfZ-Mb-hTa">
+                    <rect key="frame" x="10" y="66" width="64.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GV4-ut-Obc">
+                    <rect key="frame" x="84.5" y="60" width="225" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="callNumber:" destination="-1" eventType="touchUpInside" id="bzG-hx-Fol"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xkl-v6-Rkc">
+                    <rect key="frame" x="10" y="523" width="300" height="30"/>
+                    <state key="normal" title="Stop"/>
+                    <connections>
+                        <action selector="startStopAction:" destination="-1" eventType="touchUpInside" id="TLo-Jw-rXD"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.92156862750000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="cLn-UI-8LG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="FWr-b6-GZh"/>
+                <constraint firstItem="GV4-ut-Obc" firstAttribute="centerY" secondItem="UfZ-Mb-hTa" secondAttribute="centerY" id="I0b-oS-6Di"/>
+                <constraint firstItem="GV4-ut-Obc" firstAttribute="leading" secondItem="UfZ-Mb-hTa" secondAttribute="trailing" constant="10" id="K4C-uf-WkF"/>
+                <constraint firstAttribute="trailing" secondItem="Xkl-v6-Rkc" secondAttribute="trailing" constant="10" id="Nq8-mE-tzt"/>
+                <constraint firstItem="Od3-Cm-TEi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="QUL-0p-qlA"/>
+                <constraint firstAttribute="trailing" secondItem="GV4-ut-Obc" secondAttribute="trailing" constant="10" id="RJC-xG-iba"/>
+                <constraint firstItem="Od3-Cm-TEi" firstAttribute="top" secondItem="cLn-UI-8LG" secondAttribute="bottom" constant="10" id="X3s-xC-IIa"/>
+                <constraint firstItem="UfZ-Mb-hTa" firstAttribute="top" secondItem="Od3-Cm-TEi" secondAttribute="bottom" constant="10" id="awp-vq-eLm"/>
+                <constraint firstAttribute="bottom" secondItem="Xkl-v6-Rkc" secondAttribute="bottom" constant="15" id="bHW-gs-6Jf"/>
+                <constraint firstItem="e77-nY-lkt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="cCg-0C-Wjz"/>
+                <constraint firstItem="cLn-UI-8LG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="fEJ-uj-z3h"/>
+                <constraint firstAttribute="trailing" secondItem="e77-nY-lkt" secondAttribute="trailing" constant="5" id="ftd-Zp-1Jm"/>
+                <constraint firstAttribute="bottom" secondItem="e77-nY-lkt" secondAttribute="bottom" constant="5" id="lAt-mY-fap"/>
+                <constraint firstItem="e77-nY-lkt" firstAttribute="top" secondItem="GV4-ut-Obc" secondAttribute="bottom" constant="5" id="ljw-WG-s5g"/>
+                <constraint firstAttribute="trailing" secondItem="cLn-UI-8LG" secondAttribute="trailing" constant="10" id="nEt-7P-pgZ"/>
+                <constraint firstItem="UfZ-Mb-hTa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="qqV-PQ-uEM"/>
+                <constraint firstAttribute="trailing" secondItem="Od3-Cm-TEi" secondAttribute="trailing" constant="10" id="tdS-RI-6xH"/>
+                <constraint firstItem="Xkl-v6-Rkc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="xgN-yN-Scd"/>
+            </constraints>
+            <point key="canvasLocation" x="396" y="328"/>
+        </view>
+    </objects>
+</document>

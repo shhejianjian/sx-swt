@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="159" id="KGk-i7-Jjw" customClass="SWTTSGGCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="159"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="158.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="案号：(2015)陕立民终字第00042号" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rff-7k-BmE">
+                        <rect key="frame" x="8" y="8" width="304" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="审理法院：。。。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VkY-fg-f1E">
+                        <rect key="frame" x="8" y="41" width="304" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="审理法庭：。。。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iaj-Dz-RPW">
+                        <rect key="frame" x="8" y="65" width="304" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="案        由：。。。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3TY-IN-7Q3">
+                        <rect key="frame" x="8" y="89" width="304" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主审法官：。。。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pvW-nB-o9v">
+                        <rect key="frame" x="8" y="113" width="304" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开庭时间：2015年12月15号 15点30分" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11f-wA-Xhp">
+                        <rect key="frame" x="8" y="137" width="304" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.93725490199999995" green="0.92156862750000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="VkY-fg-f1E" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="5g0-QB-Mqs"/>
+                    <constraint firstItem="pvW-nB-o9v" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="7MY-54-yhl"/>
+                    <constraint firstItem="11f-wA-Xhp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="7kp-Px-VFU"/>
+                    <constraint firstAttribute="trailing" secondItem="iaj-Dz-RPW" secondAttribute="trailing" constant="8" id="FtX-ed-tq1"/>
+                    <constraint firstAttribute="trailing" secondItem="rff-7k-BmE" secondAttribute="trailing" constant="8" id="HZz-pO-Zzt"/>
+                    <constraint firstAttribute="trailing" secondItem="pvW-nB-o9v" secondAttribute="trailing" constant="8" id="HsA-aj-int"/>
+                    <constraint firstAttribute="trailing" secondItem="11f-wA-Xhp" secondAttribute="trailing" constant="8" id="Ibg-tl-c97"/>
+                    <constraint firstAttribute="trailing" secondItem="VkY-fg-f1E" secondAttribute="trailing" constant="8" id="JpC-3c-E5i"/>
+                    <constraint firstItem="pvW-nB-o9v" firstAttribute="top" secondItem="3TY-IN-7Q3" secondAttribute="bottom" constant="8" id="OqZ-V7-eaI"/>
+                    <constraint firstItem="rff-7k-BmE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Rkl-nV-Pxf"/>
+                    <constraint firstItem="rff-7k-BmE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Tgb-Uj-W2I"/>
+                    <constraint firstItem="iaj-Dz-RPW" firstAttribute="top" secondItem="VkY-fg-f1E" secondAttribute="bottom" constant="8" id="X4b-DP-Yq4"/>
+                    <constraint firstItem="3TY-IN-7Q3" firstAttribute="top" secondItem="iaj-Dz-RPW" secondAttribute="bottom" constant="8" id="bGf-hd-tMC"/>
+                    <constraint firstItem="3TY-IN-7Q3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="fRC-7a-sCn"/>
+                    <constraint firstItem="iaj-Dz-RPW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="hn6-DR-3ij"/>
+                    <constraint firstAttribute="trailing" secondItem="3TY-IN-7Q3" secondAttribute="trailing" constant="8" id="o30-WR-qMv"/>
+                    <constraint firstItem="11f-wA-Xhp" firstAttribute="top" secondItem="pvW-nB-o9v" secondAttribute="bottom" constant="8" id="okN-tC-aXg"/>
+                    <constraint firstItem="VkY-fg-f1E" firstAttribute="top" secondItem="rff-7k-BmE" secondAttribute="bottom" constant="15" id="wGn-RT-DFw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ahqcLabel" destination="rff-7k-BmE" id="osb-rq-Miz"/>
+                <outlet property="aymcLabel" destination="3TY-IN-7Q3" id="fFe-kv-Gzp"/>
+                <outlet property="ktsjLabel" destination="11f-wA-Xhp" id="0MS-dm-Wjr"/>
+                <outlet property="slftLabel" destination="iaj-Dz-RPW" id="mk4-SV-Kn9"/>
+                <outlet property="slfyLabel" destination="VkY-fg-f1E" id="fd6-80-IUc"/>
+                <outlet property="zsfgLabel" destination="pvW-nB-o9v" id="rJd-8Y-W2g"/>
+            </connections>
+            <point key="canvasLocation" x="200" y="262.5"/>
+        </tableViewCell>
+    </objects>
+</document>
